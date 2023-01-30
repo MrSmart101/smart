@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blue;
+}
+
+header {
+  background: linear-gradient(to right, red, blue);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: blueviolet;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: rgba(9, 4, 4, 255);
+  height: 300px; 
+  color: white;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: blue;
+  padding: 10px;
+  margin-bottom: 0cm;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>WELCOME</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">WELCOME</a></li>
+      <li><a href="#">Sign uo</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>NEVER GIVE UP</h1>
+    <marquee scrollamount="2" direction="up" height="80%">
+   <p><img src="Gif_1673431630501.gif"></p>
+   <b><p>"Believe in yourself and all that you are.</p>
+    <p>Know that there is something inside you that is greater than any obstacle.</p>
+    <p>Every obstacle is an opportunity to grow and become a better version of yourself.</p> 
+    <p>Trust your instincts, and let your passions guide you.</p>
+    <p>Take risks, embrace change, and never stop learning.</p>
+    <p>Embrace every challenge as an opportunity to grow.</p> 
+    <p>Success is possible if you believe and work hard.</p>
+    <p>Success is not final, failure is not fatal: it's the courage to continue that counts.</p>
+    <p>And above all, never give up on your dreams."</p></b>
+    <p><img src="Gif_1673431630501.gif"></p>
+</marquee>
+</article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
